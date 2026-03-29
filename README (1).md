@@ -135,20 +135,13 @@ npx serve .
 - **D.Krishna Mahesh**
 
 ### Roles
- **P.Kesava Datta**:Search & Home page
-- **P.Jaya Lakshmi**:  Booking System
+- **P.Kesava Datta**: Search & Home page
+- **P.Jaya Lakshmi**: Booking System 
 - **M.Naga venkata sridhara**: Payment & Styling
-- **D.Krishna Mahesh**: Authentication & user management
-
+- **D.Krishna Mahesh**: Authentication & user management 
 
 ### LinkedIn URL
-
- **P.Kesava Datta**:https://www.linkedin.com/in/kesava-datta-polaki-b1a27832b/
-- **P.Jaya Lakshmi**:https://www.linkedin.com/in/pilli-jaya-lakshmi
-- **M.Naga venkata sridhara**:https://www.linkedin.com/in/krishna-mahesh-d
-- **D.Krishna Mahesh**: https://www.linkedin.com/in/sridhar-mutyala
-
-- Updated by Jaya Lakshmi
-- Updated by Kesava Datta
-- Updated by Naga Venkata Sridhara
-- Updated by Krishna Mahesh
+- P.Kesava Datta :https://www.linkedin.com/in/kesava-datta-polaki-b1a27832b/
+- P.Jaya Lakshmi :https://www.linkedin.com/in/pilli-jaya-lakshmi
+- D.Krishna Mahesh :https://www.linkedin.com/in/krishna-mahesh-d
+- M.Naga venkata sridhara :https://www.linkedin.com/in/sridhar-mutyala
