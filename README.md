@@ -1,52 +1,86 @@
-TravelGo (Travel Booking System)
+# TravelGo (Travel Booking System)
 
-Project Description
+---
+
+## Project Description
+
 TravelGo is a front-end travel booking demo that lets users search travel options (Flights/Trains/Buses), book tickets, and complete a simulated payment flow. It uses in-browser storage to manage users and bookings, so it runs entirely in the browser with a simple local server.
 
-Problem Statement
+---
+
+## Problem Statement
+
 Build a simple travel booking system interface that allows a user to:
 
-register/login,
-search travel options,
-enter passenger details,
-pay (simulated),
-and view/cancel bookings, all while running locally without requiring a backend.
-Features of the Project
-Authentication & user management
-Register new users and sign in
-Session-based access control for protected pages
-Logout support
-Search & results
-Search form with city autocomplete suggestions
-Results page that displays available options from demo data
-Booking system
-Select an option and enter passenger details
-Validations for required fields, email, phone number, and age
-Stores bookings per user
-Payment (simulated)
-Multiple payment methods (Credit Card, Debit Card, UPI, Net Banking)
-Basic input validations and success confirmation modal
-My Bookings
-View bookings for the logged-in user
-Cancel booking functionality
-UI/UX
-Responsive navbar with mobile toggle
-Dark mode toggle on the search/home page
-Technology Used
-Programming languages
-HTML5
-CSS3
-JavaScript (Vanilla JS)
-Tools / runtime
-Browser (Chrome/Edge/Firefox)
-Local web server (recommended):
-Python http.server (Python 3), or
-Node.js npx serve (optional alternative)
-Browser storage
-localStorage (users + bookings)
-sessionStorage (current session + selected booking flow state)
-Project Structure
+- register/login  
+- search travel options  
+- enter passenger details  
+- pay (simulated)  
+- view/cancel bookings  
 
+all while running locally without requiring a backend.
+
+---
+
+## Features of the Project
+
+### Authentication & user management
+- Register new users and sign in  
+- Session-based access control for protected pages  
+- Logout support  
+
+### Search & results
+- Search form with city autocomplete suggestions  
+- Results page that displays available options  
+
+### Booking system
+- Select an option and enter passenger details  
+- Validations for:
+  - required fields  
+  - email  
+  - phone number  
+  - age  
+- Stores bookings per user  
+
+### Payment (simulated)
+- Multiple payment methods:
+  - Credit Card  
+  - Debit Card  
+  - UPI  
+  - Net Banking  
+- Basic validation + success confirmation  
+
+### My Bookings
+- View bookings for logged-in user  
+- Cancel booking functionality  
+
+### UI/UX
+- Responsive navbar  
+- Mobile toggle  
+- Dark mode toggle  
+
+---
+
+## Technology Used
+
+### Programming languages
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla JS)  
+
+### Tools / runtime
+- Browser (Chrome / Edge / Firefox)  
+- Local web server:
+  - Python http.server  
+  - Node.js npx serve  
+
+### Browser storage
+- localStorage (users + bookings)  
+- sessionStorage (session + booking flow)  
+
+---
+
+## Project Structure
 fsd/
 ├─ index.html
 ├─ login.html
@@ -57,72 +91,81 @@ fsd/
 ├─ payment.html
 ├─ mybookings.html
 ├─ css/
-│  ├─ style.css
-│  └─ home.css
+│ ├─ style.css
+│ └─ home.css
 └─ js/
-   ├─ auth.js
-   ├─ autocomplete.js
-   ├─ search.js
-   ├─ home.js
-   ├─ booking.js
-   └─ payment.js
-   
-Installation / Setup
-This project is static (no backend). You only need a local server so that navigation and storage work reliably.
+├─ auth.js
+├─ autocomplete.js
+├─ search.js
+├─ home.js
+├─ booking.js
+└─ payment.js
 
-Option A: Python (recommended)
-Install Python 3 (if not installed).
-Open PowerShell in the project folder:
-cd "C:\Users\Polak\OneDrive\Desktop\fsd"
+
+
+## Installation / Setup
+
+This project is static (no backend). You only need a local server.
+
+### Option A: Python (recommended)
+
+1. Install Python 3  
+2. Open PowerShell  
+
+cd "your-project-folder"
 python -m http.server 5500
-Open the app in your browser:
+
+
+3. Open:
 http://localhost:5500/
-Option B: Node.js (alternative)
-Install Node.js (if not installed).
-Run:
-cd "C:\Users\Polak\OneDrive\Desktop\fsd"
+
+---
+
+### Option B: Node.js
+
+1. Install Node.js  
+2. Run:
+
+cd "your-project-folder"
 npx serve .
-Open the URL shown in the terminal (usually http://localhost:3000).
-Usage
-Open http://localhost:5500/ (or your Node serve URL).
-You will be redirected to search.html.
-Click Login or Signup:
-Create an account (Register) and you’ll be logged in automatically.
-Search travel:
-Choose From, To, and Departure Date, then click SEARCH.
-On the results page:
-Click Book Now → on any option.
-Fill passenger details:
-Click Continue to Payment →.
-Payment:
-Select a payment method, enter details, then Pay Securely (simulated).
-View bookings:
-Open My Bookings to see your booking and cancel if needed.
-Sample Output
-Login/Register: User account created and session stored.
-Results page: A list of cards showing operator/company, depart/arrive time, duration, price, and seats.
-Booking confirmation: A success modal displaying a generated Booking ID (example format: TGO########).
-My Bookings: Booking cards showing route, date, passenger, seat preference, payment method, and booking ID.
-Future Improvements
-Add a real backend (API + database) for persistent users/bookings
-Add filtering/sorting (price, duration, departure time) on results
-Add round-trip and multi-city flows (UI already has placeholders)
-Add seat map selection and dynamic seat availability updates
-Add email confirmation integration (after payment)
-Add automated tests (UI + storage logic) and CI workflow on GitHub
-Author
-Names
-P .Kesava Datta
-P.Jaya Lakshmi
-M.Naga venkata sridhara
-D.Krishna Mahesh
-Roles
-P.Kesava Datta: Search & Home page
-P.Jaya Lakshmi: Booking System
-M.Naga venkata sridhara: Payment & Styling
-D.Krishna Mahesh: Authentication & user management
-LinkedIn URL
-P.Kesava Datta :https://www.linkedin.com/in/kesava-datta-polaki-b1a27832b/
-P.Jaya Lakshmi :https://www.linkedin.com/in/pilli-jaya-lakshmi
-D.Krishna Mahesh :https://www.linkedin.com/in/krishna-mahesh-d
-M.Naga venkata sridhara :https://www.linkedin.com/in/sridhar-mutyala
+
+
+---
+
+## Usage
+
+1. Open the application  
+2. Login or Signup  
+3. Search travel options  
+4. Click **Book Now**  
+5. Enter passenger details  
+6. Continue to payment  
+7. Complete payment  
+8. View in **My Bookings**  
+
+---
+
+## Author
+
+### Names
+- P. Kesava Datta  
+- P. Jaya Lakshmi   
+- M. Naga Venkata Sridhara  
+- D. Krishna Mahesh  
+
+---
+
+### Roles
+- Kesava Datta → Search & Home  
+- Jaya Lakshmi → Booking System  
+- Sridhara → Payment & Styling  
+- Krishna Mahesh → Authentication  
+
+---
+
+## LinkedIn
+
+- P.Kesava Datta :https://www.linkedin.com/in/kesava-datta-polaki-b1a27832b/
+- P.Jaya Lakshmi :https://www.linkedin.com/in/pilli-jaya-lakshmi
+- D.Krishna Mahesh :https://www.linkedin.com/in/krishna-mahesh-d
+- M.Naga venkata sridhara :https://www.linkedin.com/in/sridhar-mutyala
